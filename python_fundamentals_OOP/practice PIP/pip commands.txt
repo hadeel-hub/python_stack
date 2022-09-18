@@ -1,0 +1,7 @@
+pip install Flask
+pip install Django
+pip uninstall Flask
+pip uninstall Django
+
+pip list
+pip freeze
