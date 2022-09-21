@@ -1,14 +1,13 @@
-from django.shortcuts import render,redirect, HttpResponse
+from django.shortcuts import render,redirect
 
 def counter(request):
-   if 'count' in request.session:
-      request.session ['count']+=1
-   else:
-    request.session['count']=0
-    return render( request,"index.html")
+   if 'count' not in request.session:
+      request.session ['count']=0
+   request.session['count']+=1
+   return render( request,'index.html')
 
 def destroy(request):
-    del request.session['count']
-    return redirect('/')
+   del request.session['count']
+   return redirect('/')
 
 
