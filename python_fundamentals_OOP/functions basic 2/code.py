@@ -21,6 +21,7 @@ print (print_and_return([3,77]))
 def first_plus_length(list):
     print(list[0])
     return len(list)
+    return(list[0]+len(list))
 print(first_plus_length([55,46,2]))
 
 
