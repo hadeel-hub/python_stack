@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show page</title>
+</head>
+<body>
+    <h1>Welcome to the great Number Game </h1>
+    <h3>i am thinking of a number between 1 and 100</h3>
+    <h4>Take a guess</h4>
+    {% if 'result' in ' number_on_show' =="true" %}
+    <textarea name="search" id="search" cols="30" rows="10">{{result}}</textarea>
+    {% endif %}
+    {% if 'result' in ' number_on_show' =="too high" %}
+    <textarea name="search" id="search" cols="30" rows="10">{{result}}</textarea>
+    {% endif %}
+    {% if 'result' in ' number_on_show' =="too low" %}
+    <textarea name="search" id="search" cols="30" rows="10">{{result}}</textarea>
+    {% endif %}
+
+
+</body>
+</html>
